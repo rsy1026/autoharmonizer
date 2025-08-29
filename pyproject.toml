@@ -3,5 +3,9 @@ name = "autoharmonizer_eval"
 version = "0.1.0"
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=64.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["autoharmonizer*"]
+exclude = ["inputs", "outputs", "dataset", "tests*"]
