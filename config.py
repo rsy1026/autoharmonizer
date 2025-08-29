@@ -1,13 +1,13 @@
 # Path setting
-DATASET_PATH = "dataset"
-CORPUS_PATH = "data_corpus.bin"
-CHORD_TYPES_PATH = 'chord_types.bin'
-WEIGHTS_PATH = 'weights.hdf5'
-INPUTS_PATH = "inputs"
-OUTPUTS_PATH = "outputs"
+DATASET_PATH = "autoharmonizer/dataset"
+CORPUS_PATH = "autoharmonizer/data_corpus.bin"
+CHORD_TYPES_PATH = "autoharmonizer/chord_types.bin"
+WEIGHTS_PATH = "autoharmonizer/weights.hdf5"
+INPUTS_PATH = "autoharmonizer/inputs"
+OUTPUTS_PATH = "autoharmonizer/outputs"
 
 # 'loader.py'
-EXTENSION = ['.musicxml', '.xml', '.mxl']
+EXTENSION = [".musicxml", ".xml", ".mxl"]
 
 # '.model.py'
 VAL_RATIO = 0.1
