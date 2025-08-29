@@ -1,10 +1,15 @@
+from pathlib import Path
+
+CURRENT_FILE_PATH = Path(__file__)
+PACKAGE_DIR = CURRENT_FILE_PATH.parent
+
 # Path setting
-DATASET_PATH = "dataset"
-CORPUS_PATH = "data_corpus.bin"
-CHORD_TYPES_PATH = "chord_types.bin"
-WEIGHTS_PATH = "weights.hdf5"
-INPUTS_PATH = "inputs"
-OUTPUTS_PATH = "outputs"
+DATASET_PATH = str(PACKAGE_DIR / "dataset")
+CORPUS_PATH = str(PACKAGE_DIR / "data_corpus.bin")
+CHORD_TYPES_PATH = str(PACKAGE_DIR / "chord_types.bin")
+WEIGHTS_PATH = str(PACKAGE_DIR / "weights.hdf5")
+INPUTS_PATH = str(PACKAGE_DIR / "inputs")
+OUTPUTS_PATH = str(PACKAGE_DIR / "outputs")
 
 # 'loader.py'
 EXTENSION = [".musicxml", ".xml", ".mxl"]
