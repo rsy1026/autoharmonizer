@@ -194,7 +194,7 @@ def export_music(
     new_score.write("mxl", fp=outputs_path + "/" + filename + ".mxl")
 
 
-if __name__ == "__main__":
+def main():
 
     # Load data from 'inputs'
     filenames = get_filenames(input_dir=INPUTS_PATH)
