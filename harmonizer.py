@@ -2,13 +2,13 @@ import os
 import warnings
 import pickle
 import numpy as np
-from config import *
+from autoharmonizer.config import *
 from music21 import *
 from tqdm import trange
 from copy import deepcopy
-from model import build_model
+from autoharmonizer.model import build_model
 from samplings import gamma_sampling
-from loader import get_filenames, convert_files
+from autoharmonizer.loader import get_filenames, convert_files
 from tensorflow.python.keras.utils.np_utils import to_categorical
 
 # use cpu

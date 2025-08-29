@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # import keras_metrics as km
-from config import *
+from autoharmonizer.config import *
 from tqdm import trange
 from keras import Model
 from keras.utils import Sequence
